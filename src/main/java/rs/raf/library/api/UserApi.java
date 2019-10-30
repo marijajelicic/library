@@ -5,6 +5,7 @@ import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -29,8 +30,10 @@ public class UserApi {
 		return userService.save(userDto);
 	}
 	
-	@RequestMapping(value = "/hello", method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)
-	public String hello() {
-		return "Hello world!";
+	@RequestMapping(value = "/delete", method = RequestMethod.DELETE)
+	public @ResponseBody String delete(@RequestParam Long userId) {
+		return userService.delete(userId);
 	}
+	
+	
 }

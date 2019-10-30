@@ -6,5 +6,7 @@ import rs.raf.library.domain.dto.UserDto;
 public interface UserService {
 
 	public User save(UserDto userDto);
+	
+	public String delete(Long userId);
 
 }

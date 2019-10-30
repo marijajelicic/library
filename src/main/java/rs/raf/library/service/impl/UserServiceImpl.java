@@ -33,4 +33,11 @@ public class UserServiceImpl implements UserService{
 		return userDao.save(user);
 	}
 
+	@Override
+	public String delete(Long userId) {
+		
+		userDao.deleteById(userId);
+		return "User id=" + userId + " je uspesno obrisan.";
+	}
+
 }
