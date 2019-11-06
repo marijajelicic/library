@@ -21,7 +21,7 @@ public class BookAuthorServiceImpl implements BookAuthorService{
 	}
 
 	@Override
-	public List<BookAuthor> findAll() {
+	public List<BookAuthor> findAll() {	
 		return bookAuthorDao.findAll();
 	}
 

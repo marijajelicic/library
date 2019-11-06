@@ -66,7 +66,5 @@ public class BookAuthor {
 	public String toString() {
 		return "BookAuthor [id=" + id + ", author=" + author + ", book=" + book + "]";
 	}
-
-	
 	
 }

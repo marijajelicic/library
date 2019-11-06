@@ -8,4 +8,6 @@ import rs.raf.library.domain.User;
 @Repository
 public interface UserDao extends JpaRepository<User, Long>{
 
+	
+	
 }
