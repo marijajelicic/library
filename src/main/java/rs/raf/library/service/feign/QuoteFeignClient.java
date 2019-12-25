@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 
 import rs.raf.library.domain.dto.QuoteDto;
 
-@FeignClient(name = "quotes", url = "http://localhost:8080/quotes")
+@FeignClient(name = "quotes", url = "http://185.26.117.147:8080/quotes")
 public interface QuoteFeignClient {
 
 	@RequestMapping(value = "/quotes/getQuote", method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)
