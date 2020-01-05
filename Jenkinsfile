@@ -41,7 +41,7 @@ pipeline {
                 script{
                     sh '''
                             docker container stop library
-                            docker container rmi library
+                            docker container rm library
                         '''
                 }
             }
