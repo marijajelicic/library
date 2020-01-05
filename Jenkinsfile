@@ -40,8 +40,8 @@ pipeline {
             steps{
                 script{
                     sh '''
-                            docker container stop library:latest
-                            docker container rmi library:latest
+                            docker container stop library
+                            docker container rmi library
                         '''
                 }
             }
